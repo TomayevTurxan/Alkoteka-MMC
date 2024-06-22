@@ -1,0 +1,76 @@
+#nav
+    position: fixed
+    width: 100%
+    left: 0
+    top: 0
+    z-index: 999
+    transition: .3s all ease-out
+    .box
+        display: flex
+        align-items: center
+        span
+            font-weight: 700
+            font-size: 24px
+            position: relative
+            text-transform: uppercase
+            color: white
+        a
+            &:hover
+                text-decoration: none
+    .imgbox
+        width: 30%
+        margin-right: 15px
+    .navbar
+        float: right
+        ul
+            margin: 0
+            li
+                display: inline-block
+            a
+                font-size: 14px
+                padding-top: 1.5rem
+                padding-bottom: 1.5rem
+                padding-left: 20px
+                padding-right: 5px
+                font-weight: 300
+                text-transform: uppercase
+                letter-spacing: 2px
+                color: white
+                font-weight: 600
+                &:hover
+                    text-decoration: none
+        .active
+            color: #499406
+
+@media screen and ( max-width: 762px)
+    #nav
+        display: none
+    #nav-hamburger
+        display: block
+        background-color: #1a1a1a!important
+        .navbar-toggler
+            float: right
+            border: none
+            padding-top: 10px
+            padding-left: 50px
+        .navbar-brand
+            font-weight: 700
+            font-size: 24px
+            position: relative
+            text-transform: uppercase
+        .nav-link
+            font-size: 14px
+            padding-top: 1.5rem
+            padding-bottom: 1.5rem
+            padding-right: 20px
+            color: #fff
+            font-weight: 300
+            text-transform: uppercase
+            letter-spacing: 1px
+            opacity: 1 !important
+
+@media (min-width: 762px) and (max-width: 976px)
+    #nav
+        padding: 20px 0px 20px 0px
+        .imgbox
+            display: none

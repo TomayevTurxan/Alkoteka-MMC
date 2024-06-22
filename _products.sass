@@ -1,0 +1,105 @@
+#products
+    .btn
+        background-color: #499406
+        border: none
+    .head-select
+        display: flex
+        justify-content: space-between
+        margin-bottom: 20px
+        .select
+            span
+                font-size: 18px
+                font-weight: 500
+    .imgbox
+        height: 350px
+        position: relative
+        z-index: 0
+        background-size: cover
+        transition: all 0.5s ease
+        border-radius: 5px
+        &:hover
+            filter: brightness(0.5)
+            transition: all 0.5s ease
+    .head-tittle
+        span
+            font-size: 18px
+            display: inline-block
+            margin-bottom: 0
+            color: #499406
+            font-size: 16px
+            font-weight: 400
+            font-style: italic
+            position: relative
+        h2
+            font-size: 40px
+            font-weight: 700
+    .textbox
+        position: relative
+        padding: 20px
+        text-align: center
+        .sale
+            position: absolute
+            top: 0
+            left: 4px
+            font-size: 12px
+            padding: 0 10px
+            color: #fff
+            background-color: #499406
+        h2
+            font-size: 22px
+            text-transform: capitalize
+            font-weight: 400
+        .price-sale
+            margin-right: 5px
+            color: #cccccc
+            text-decoration: line-through
+        .price
+            font-style: italic
+            color: #000000
+    .category
+        font-style: italic
+        color: #499406
+    .all-products
+        a
+            width: 100%
+            background: #499406
+            border: 1px solid #499406
+            color: #fff
+    .categories
+        h3
+            font-size: 22px
+            margin-bottom: 26px
+            font-weight: 500
+        ul
+            li
+                display: flex
+                justify-content: space-between
+                position: relative
+                margin-bottom: 10px
+                padding-bottom: 10px
+                border-bottom: 1px solid #dee2e6
+                list-style: none
+                cursor: pointer
+                &:hover
+                    color: #499406
+                    transition: .2s ease
+    .pagination
+        display: flex
+        justify-content: center
+        ul
+            display: flex
+            li
+                color: white
+                margin-right: 10px
+                padding: 10px
+                border: 1px
+                background-color: #499406
+                cursor: pointer
+                border-radius: 5px
+@media screen and ( max-width: 576px)
+    #products
+        .btn-group
+            display: none
+        .row:nth-child(2)
+            flex-direction: column-reverse
+            display: flex

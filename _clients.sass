@@ -1,0 +1,108 @@
+#clients
+    background-image: url(img/clients.jpg)
+    width: 100%
+    height: 80vh !important
+    position: relative
+    background-size: 100%
+    background-position: center
+    background-attachment: fixed
+    padding: 6em 0
+    margin-bottom: 0
+    .text
+        color: white
+        text-align: center
+        z-index: 9
+        margin-bottom: 30px
+        .subhead
+            font-size: 18px
+            margin-bottom: 0
+            font-weight: 400
+            font-style: italic
+        h2
+            font-size: 40px
+            color: #fff
+            margin-top: 10px
+    .testiomanials
+        display: block
+        position: relative
+        border: 1px solid rgba(255, 255, 255, 0.2)
+        padding: 0 20px
+        border-radius: 4px
+        color: rgba(255, 255, 255, 0.7)
+        padding-top: 1.5em
+        padding-bottom: 1.5em
+        margin-top: 30px
+        .icon
+            position: absolute
+            top: -20px
+            left: 20px
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            background: #499406
+            display: flex
+            justify-content: center
+            align-items: center
+            color: white
+            font-size: 20px
+        .text
+            p
+                text-align: start
+                font-style: italic
+                font-size: 17px
+                color: rgba(255, 255, 255, 0.7)
+                font-weight: 400
+        .user
+            display: flex
+            align-items: center
+            .profile
+                width: 80px
+                height: 80px
+                position: relative
+                border-radius: 50%
+                margin-right: 20px
+            .name
+                p
+                    font-weight: 400
+                    font-size: 20px
+                    margin-bottom: 0
+                    color: #fff
+                    font-style: normal !important
+                    z-index: 9999
+                span
+                    font-size: 16px
+                    color: rgba(255, 255, 255, 0.7)
+        .slick-next, .slick-prev
+            display: none!important
+@media screen and ( max-width: 576px)
+    #clients
+        h2
+            font-size: 25px!important
+        .testiomanials
+            margin-top: 20px
+            .text
+                p
+                    font-size: 13px
+            .user
+                .profile
+                    width: 40px
+                    height: 40px
+        .slick-next, .slick-prev
+            display: none!important
+
+@media (min-width: 576px) and (max-width: 762px)
+    #clients
+        .testiomanials
+            margin-top: 20px
+            .text
+                p
+                    font-size: 15px
+            .user
+                .profile
+                    width: 40px
+                    height: 40px
+                .name
+                    span
+                        font-size: 14px
+        .slick-next, .slick-prev
+            display: none!important
